@@ -7,7 +7,7 @@ import { APP_NAME, APP_VERSION, PORT } from './constant';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-
+  app.enableCors();
   await app.listen(PORT, () => {
     console.clear();
     console.log();
