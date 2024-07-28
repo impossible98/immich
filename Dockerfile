@@ -7,6 +7,7 @@ RUN yarn install
 # Build
 FROM dev AS build
 WORKDIR /app
+COPY . .
 RUN yarn run build
 
 # Production
