@@ -1,8 +1,8 @@
 // import third-party modules
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 
 export const APP_NAME: string = 'Immich';
-export const APP_VERSION: string = '0.0.13';
+export const APP_VERSION: string = '0.0.14';
 export const PORT: number = parseInt(process.env.PORT, 10) || 3000;
 
 if (process.env.NODE_ENV == 'production') {
