@@ -30,7 +30,7 @@ endif
 log:
 	git log --oneline --decorate --graph --all
 # 推送代码
-push: build
+push:
 	git push
 	git push origin --tags
 version:

@@ -1,11 +1,13 @@
+// import third-party modules
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-
-import { APP_NAME, APP_VERSION } from './constant';
+import type { NestExpressApplication } from '@nestjs/platform-express';
+// import local modules
+import { APP_NAME, APP_VERSION, PORT } from './constant';
 
 async function bootstrap() {
-  const PORT = process.env.PORT || 3000;
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+
   await app.listen(PORT, () => {
     console.clear();
     console.log();

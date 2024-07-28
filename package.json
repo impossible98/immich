@@ -1,6 +1,6 @@
 {
   "name": "immich",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "nest build",
