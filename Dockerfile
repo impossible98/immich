@@ -12,8 +12,8 @@ RUN yarn run build \
 # Production
 FROM node:18.19.0 AS production
 WORKDIR /app
-COPY --from=build /app/node_modules .
-COPY --from=build /app/dist .
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/dist ./dist
 ENV NODE_ENV="production"
 ENV DATABASE_HOST=""
 ENV DATABASE_PORT=""
