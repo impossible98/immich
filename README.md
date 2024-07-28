@@ -1,7 +1,5 @@
 # Immich
 
-## Description
-
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
@@ -10,15 +8,20 @@
 yarn install
 ```
 
-## Running the app
+## Development
 
 ```bash
-# development
-yarn run start
-
-# watch mode
 yarn run start:dev
+```
 
-# production mode
-yarn run start:prod
+## Build
+
+```bash
+yarn run build
+```
+
+## Docker
+
+```bash
+docker pull impossible98/immich.
 ```
