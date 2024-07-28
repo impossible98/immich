@@ -1,0 +1,11 @@
+# docs: https://hub.docker.com/r/impossible98/immich
+# source code: https://github.com/impossible98/immich
+version: '3'
+
+services:
+  immich:
+    image: impossible98/immich
+    env_file: .env
+    ports:
+      - '12284:12284'
+    restart: unless-stopped
